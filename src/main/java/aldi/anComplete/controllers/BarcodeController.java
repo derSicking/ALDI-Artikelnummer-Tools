@@ -21,7 +21,7 @@ import com.google.zxing.oned.EAN13Writer;
 import com.google.zxing.oned.EAN8Writer;
 
 @Controller
-@RequestMapping(value = { "/barcode" })
+@RequestMapping(value = { "/barcode-image" })
 public class BarcodeController {
 
 	@GetMapping

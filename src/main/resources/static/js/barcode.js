@@ -14,7 +14,7 @@ $(document).ready(function () {
 
 		ean = $.ajax({type: "GET", url: "/complete?an=" + input , async: false}).responseText;
 
-        $("#barcode-image").attr("src", "/barcode?an=" + ean);
+        $("#barcode-image").attr("src", "/barcode-image?an=" + ean);
         $("#article-number-text").text(ean);
 
     });

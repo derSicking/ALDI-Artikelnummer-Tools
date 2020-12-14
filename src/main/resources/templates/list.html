@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="de">
+
+<head>
+	<meta charset="UTF-8">
+	<title>ALDI Artikelnummer Liste</title>
+	<link rel="stylesheet" th:href="@{/css/list.css}" />
+	
+	<link rel="stylesheet" type="text/css" href="webjars/bootstrap/4.5.3/css/bootstrap.min.css"/>
+</head>
+
+<body>
+
+	<div class="form-container" id="1">
+		<form class="form">
+			<input type="number" class="numberInput input"/>
+			<label class="numberLabel"></label>
+			<label class="x">x</label>
+			<input type="number" class="input count KaCountInput"/>
+			<label class="/">/</label>
+			<input type="number" class="input count StCountInput"/>
+		</form>
+	</div>
+	
+	<script type="text/javascript" src="webjars/jquery/3.5.1/jquery.min.js"></script>
+	<script type="text/javascript" th:src="@{/js/list.js}"></script>
+</body>
+
+</html>

@@ -1,0 +1,46 @@
+.input {
+	border-style: hidden;
+	border-color: black;
+	outline: none;
+	width: 5em;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input.input::-webkit-outer-spin-button,
+input.input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input.input[type=number] {
+  -moz-appearance: textfield;
+}
+
+.KaCountInput {
+	text-align: end;
+}
+
+.count {
+	width: 2em;
+}
+
+.numberInput {
+	text-align: end;
+	border: solid 1;
+}
+
+.numberLabel {
+	width: 8em;
+	text-align: end;
+}
+
+.form-container {
+	width: 100%;
+	text-align: center;
+	font-size: 3rem;
+}
+
+body {
+	padding-top: 3em;
+}
