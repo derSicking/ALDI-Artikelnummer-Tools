@@ -1,0 +1,43 @@
+.input {
+	border-style: hidden;
+	border-color: transparent;
+	outline: none;
+
+	width: 100%;
+	font-size: 7em;
+
+	text-align: center;
+	padding-top: 1em;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input.input::-webkit-outer-spin-button,
+input.input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input.input[type=number] {
+  -moz-appearance: textfield;
+}
+
+.barcode-container {
+	height: 200px;
+	width: 400px;
+	overflow: hidden;
+	margin: auto;
+	margin-top: 100px;
+}
+
+.barcode {
+	width: 100%;
+	image-rendering: pixelated;
+}
+
+.article-number {
+	font-family: monospace;
+	font-size: 4em;
+	text-align: center;
+	margin-top: 5px;
+}
