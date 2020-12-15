@@ -27,7 +27,8 @@ input.input[type=number] {
 
 .numberInput {
 	text-align: end;
-	border: solid 1;
+	border-radius: 15px;
+	background-color: #dddddd;
 }
 
 .numberLabel {
