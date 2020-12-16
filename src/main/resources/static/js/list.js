@@ -5,12 +5,16 @@ $(document).ready(function () {
 	createClone = function(){
 	    clone = $(".form-container").first().clone(true);
 	    $(clone).find(".input").val("");
+	    $(clone).find(".numberInput").css("opacity", "100%");
 	    $(clone).find(".numberLabel").text("");
 	    oi = clone;
-	    clone.appendTo("body");
+	    clone.appendTo($("#allForms"));
 	}
 
 	$(".numberInput").blur(function(event) {
+		if($(event.target).val().length <= 0){
+			return;
+		}
 	    $(event.target).animate({
 	    	opacity: "15%"
 	    }, 1000);
@@ -18,7 +22,7 @@ $(document).ready(function () {
 	
 	$(".numberInput").focus(function(event) {
 	    $(event.target).animate({
-	    	width: "5em",
+	    	width: "4em",
 	    	opacity: "100%"
 	    }, 1000);
 	});
@@ -42,6 +46,17 @@ $(document).ready(function () {
 	    	$(".numberInput").last().focus();
 	    }
     });
+    
+    $("#plus").click(function(event){
+    	createClone();
+    });
+    
+    $(".minus").click(function(event) {
+    	if($(".form-container").length <= 1){
+    		return;
+    	}
+		$(event.target).closest(".form-container").remove();
+	});
     
     $(".numberInput").first().focus();
 	

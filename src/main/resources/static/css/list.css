@@ -2,7 +2,7 @@
 	border-style: hidden;
 	border-color: black;
 	outline: none;
-	width: 5em;
+	width: 4em;
 }
 
 /* Chrome, Safari, Edge, Opera */
@@ -21,8 +21,12 @@ input.input[type=number] {
 	text-align: end;
 }
 
+.x {
+	width: 1em;
+}
+
 .count {
-	width: 2em;
+	width: 1.3em;
 }
 
 .numberInput {
@@ -44,4 +48,29 @@ input.input[type=number] {
 
 body {
 	padding-top: 3em;
+}
+
+#plus{
+	border: none;
+	font-size: 3rem;
+	overflow: hidden;
+	text-align: center;
+	vertical-align: middle;
+	width: 100%;
+	padding: 0;
+	outline: 0;
+	background-color: transparent;
+}
+
+.minus{
+	border: none;
+	font-size: 3rem;
+	overflow: hidden;
+	text-align: center;
+	vertical-align: middle;
+	padding: 0;
+	outline: 0;
+	margin-top: -.5em;
+	background-color: transparent;
+	width: 1em;
 }
