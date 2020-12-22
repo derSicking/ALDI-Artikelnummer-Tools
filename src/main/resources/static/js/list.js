@@ -53,6 +53,8 @@ $(document).ready(function () {
     
     $(".minus").click(function(event) {
     	if($(".form-container").length <= 1){
+    		// if there is only one line left in the list, clear that line but keep it
+    	    $(".form-container").first().find(".input").val("");
     		return;
     	}
 		$(event.target).closest(".form-container").remove();
